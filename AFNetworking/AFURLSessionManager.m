@@ -211,9 +211,11 @@ didCompleteWithError:(NSError *)error
           dataTask:(__unused NSURLSessionDataTask *)dataTask
     didReceiveData:(NSData *)data
 {
-    [self.mutableData appendData:data];
     if (self.dataHandler) {
         self.dataHandler(session, dataTask, data);
+    }
+    else {
+        [self.mutableData appendData:data];
     }
 }
 
