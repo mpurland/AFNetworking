@@ -86,6 +86,7 @@
 		345872A01CE27E8E0073978C /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "../UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		345872A11CE27E8E0073978C /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "../UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		345872A21CE27E8E0073978C /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "../UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		5AB10D181E241DC6001D8155 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +157,7 @@
 			children = (
 				345872651CE27D8F0073978C /* AFNetworking-umbrella.h */,
 				345872671CE27D8F0073978C /* Info.plist */,
+				5AB10D181E241DC6001D8155 /* module.modulemap */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -381,6 +383,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "$(PROJECT_DIR)/Framework/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.AFNetworking.Framework;
 				PRODUCT_NAME = AFNetworking;
 				SKIP_INSTALL = YES;
@@ -398,6 +401,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "$(PROJECT_DIR)/Framework/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.AFNetworking.Framework;
 				PRODUCT_NAME = AFNetworking;
 				SKIP_INSTALL = YES;
@@ -423,6 +427,7 @@
 				3458726C1CE27D8F0073978C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
